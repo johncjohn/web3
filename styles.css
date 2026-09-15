@@ -7,3 +7,27 @@
 .research { display:grid; grid-template-columns:.8fr 1.2fr; gap:90px; padding:120px 0; }.research h2,.sources h2 { margin:17px 0 25px; font:600 clamp(37px,4vw,56px)/.98 "Playfair Display",serif; letter-spacing:-.055em; }.research-intro > p:last-child { color:var(--muted); max-width:355px; font-size:15px; line-height:1.8; }.focus-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:13px; }.focus-card { min-height:250px; padding:22px; background:#ebece6; }.focus-card:nth-child(2) { background:var(--lime); }.number { color:#66766c; font:500 11px "DM Mono",monospace; }.focus-card h3 { margin:79px 0 10px; font-size:18px; letter-spacing:-.04em; }.focus-card p { margin:0; color:#59665f; font-size:12px; line-height:1.65; }.quote-band { background:#e2e8da; padding:70px 0; }.quote-band .container { display:flex; gap:25px; align-items:flex-start; }.quote-mark { color:#719168; font:70px/.8 "Playfair Display",serif; }.quote-band p { max-width:690px; margin:0; font:600 clamp(24px,3vw,38px)/1.2 "Playfair Display",serif; letter-spacing:-.04em; }
 .sources { display:grid; grid-template-columns:.85fr 1.15fr; gap:70px; padding:115px 0; }.source-list { border-top:1px solid var(--line); }.source-list a { display:grid; grid-template-columns:37px 1fr auto 20px; gap:12px; align-items:center; padding:22px 0; border-bottom:1px solid var(--line); color:var(--ink); text-decoration:none; }.source-list a:hover strong { text-decoration:underline; }.source-list span { color:#63726a; font:11px "DM Mono",monospace; }.source-list strong { font-size:14px; }.source-list small { color:var(--muted); font-size:11px; }.source-list b { font-size:18px; } footer { display:flex; justify-content:space-between; gap:20px; padding:21px 0 26px; border-top:1px solid var(--line); color:var(--muted); font-size:11px; } footer span { color:var(--ink); font:500 11px "DM Mono",monospace; } footer p { margin:0; } footer a { color:var(--ink); text-decoration:none; }
 @media (max-width:760px) { .container { width:min(100% - 32px, 600px); }.nav-links { gap:16px; }.hero { min-height:auto; grid-template-columns:1fr; gap:45px; padding:48px 0 70px; }.identity-card { max-width:400px; }.timeline { grid-template-columns:1fr; gap:35px; }.timeline-item,.timeline-item:first-child { padding:0 0 0 22px; border-left:1px solid rgba(255,255,255,.22); }.date { margin-bottom:11px; }.research,.sources { grid-template-columns:1fr; gap:35px; padding:80px 0; }.focus-grid { grid-template-columns:1fr; }.focus-card { min-height:190px; }.focus-card h3 { margin-top:52px; }.source-list a { grid-template-columns:27px 1fr 16px; }.source-list small { display:none; } footer { flex-wrap:wrap; } }
+
+.nav-links a.active { color:var(--ink); }
+.portrait-photo { position:relative; overflow:hidden; }
+.portrait-photo img { position:absolute; inset:0; z-index:1; width:100%; height:100%; object-fit:cover; }
+.teaching-hero { padding:85px 0 95px; }
+.teaching-hero h1 { margin:20px 0 28px; }
+.teaching-hero > p:last-child { max-width:520px; color:var(--muted); font-size:16px; line-height:1.75; }
+.teaching-section { padding:86px 0; }
+.teaching-section-heading { display:flex; align-items:end; justify-content:space-between; gap:40px; margin-bottom:35px; }
+.teaching-section-heading h2,.teaching-note h2 { margin:15px 0 0; font:600 clamp(37px,4vw,55px)/.98 "Playfair Display",serif; letter-spacing:-.055em; }
+.teaching-section-heading > p { max-width:315px; margin:0; color:var(--muted); font-size:13px; line-height:1.7; }
+.course-empty { padding:43px; background:var(--lime); }
+.course-empty span,.teaching-note span { font:500 11px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.09em; }
+.course-empty h3 { margin:47px 0 10px; font-size:25px; letter-spacing:-.05em; }
+.course-empty p { max-width:480px; margin:0; color:#536152; font-size:14px; line-height:1.7; }
+.teaching-past { background:var(--ink); color:white; }
+.teaching-past .section-label { color:#b8d790; }
+.teaching-past .teaching-section-heading > p { color:#bdc6c0; }
+.course-empty-light { background:#274036; }
+.course-empty-light p { color:#c9d3cc; }
+.teaching-note { display:grid; grid-template-columns:.75fr 1.25fr; gap:75px; padding:104px 0; }
+.teaching-note h2 { font-size:37px; }
+.teaching-note p { margin:0; font:600 clamp(22px,2.8vw,34px)/1.35 "Playfair Display",serif; letter-spacing:-.04em; }
+@media (max-width:760px) { .teaching-hero { padding:55px 0 70px; }.teaching-section { padding:66px 0; }.teaching-section-heading { display:block; }.teaching-section-heading > p { margin-top:19px; }.teaching-note { grid-template-columns:1fr; gap:29px; padding:80px 0; } }
